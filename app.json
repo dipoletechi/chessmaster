@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "Chess Master",
+    "slug": "chessgame",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/chess-logo.png",
+    "scheme": "chessgame",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.chessgame.app",
+      "icon": "./assets/images/chess-logo.png",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.chessgame.app",
+      "versionCode": 1,
+      "icon": "./assets/images/chess-logo.png",
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/chess-logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/chess-logo.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#000000",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "updates": {
+      "enabled": false,
+      "checkAutomatically": "NEVER",
+      "fallbackToCacheTimeout": 0
+    },
+    "runtimeVersion": "1.0.0",
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "f7711612-bd56-4c44-8d7d-72f97e3fb3e8"
+      }
+    }
+  }
+}
